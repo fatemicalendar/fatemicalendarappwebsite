@@ -70,11 +70,13 @@
       overflow: hidden;
     }
 
-    .logo span {
-      font-weight: 700;
-      letter-spacing: 0.4px;
-      font-size: 16px;
-      opacity: 0.9;
+    /* Match the index page behavior: use an image that fills the icon box */
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
     }
 
     .brand-name {
@@ -192,7 +194,10 @@
   <div class="container">
     <div class="topbar">
       <div class="brand">
-        <div class="logo" aria-hidden="true"><span>FC</span></div>
+        <!-- Replaced the "FC" text with the same icon image used in index.html -->
+        <div class="logo" aria-hidden="true">
+          <img src="appicon.jpg" alt="" />
+        </div>
         <div class="brand-name">التقويم الفاطمي</div>
       </div>
 
